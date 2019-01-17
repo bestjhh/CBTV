@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="CBTV官方网站">
+    <meta name="description" content="CBTV官方网站">
+    <title>CBTV官方网站</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script>
+        var _czc = _czc || [];
+        _czc.push(["_setAccount", "30087897"]);
+    </script>
+</head>
+<body>
+    <div id="container">
+        <script type="text/javascript">
+            function setCookie(name,value){
+                var Days = 30;
+                var exp = new Date();
+                exp.setTime(exp.getTime() + Days*24*60*60*1000);
+                document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString() + ";path=/";
+            }
+            function getCookie(name){
+                var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+                return arr=document.cookie.match(reg) ? unescape(arr[2]) : null;
+            }
+        </script>
+<div class="navbar">
+    <div class="w1200">
+        <a href="/" class="logo"><img src="css/img/logo1.png"></a>
+        <div class="nav-box-left">
+            <ul class="nav-ul">
+                <li><a href="#main" class="nav-btn ncheck" onClick="checkTab(this.href)">首页</a></li>
+                <li><a href="#team" class="nav-btn ncheck" onClick="checkTab(this.href)">发起团队</a></li>
+                <li><a href="#main" class="nav-btn ncheck" onClick="checkTab(this.href)">下载白皮书</a> </li>
+                <li><a href="#plan" class="nav-btn ncheck" onClick="checkTab(this.href)">开发计划</a></li>
+                <!--<li><a href="index.html#us" class="nav-btn ncheck hasChild" onClick="checkTab(this.href)">关注我们</a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="css/js/jquery.min.js"></script>
+<script type="text/javascript">
+    function checkTab(url){
+        url = url || location.href;
+        // var k = false;
+        $('.ncheck').each(function(){
+            var $that = $(this);
+            $that.removeClass('on');
+            if (url.indexOf($that.attr('href')) > -1) {
+                // k = true;
+                $that.addClass('on');
+            }else if($that.hasClass('hasChild')){
+                // 产品相关
+                $that.parent().find('li a').each(function(){
+                    if (url.indexOf($(this).attr('href')) > -1) {
+                        // k = true;
+                        $that.addClass('on');
+                        return false;
+                    }
+                });
+            }
+        });
+        // $('.ncheck').length != 0 && !k && $('.ncheck').eq(0).addClass('on');
+    }
+    checkTab();
+</script>
+        <div class="main">
+            <div id="main" class="stm">&nbsp;</div>
+            <div class="main-content">
+                <i class="malogo"><img src="css/img/logo.png"></i>
+                <p class="p1">Community-based Traffic Value<span class="mgl46"></span></p>
+                <p class="p2">区块链基于社群流量价值</p>
+                <a class="whiteper whiteper-btn mgt60 mgl30" href="cbtvchain.pdf">白皮书下载<i class="pointer"></i></a>
+            </div>
+            <div id="particles-js" class="particles"></div>
+        </div>
+        <!-- 展示模块 start -->
+        <div class="desc">
+    <div id="desc" class="stm">&nbsp;</div>
+    <div class="w1200 textcen">
+        <p class="ptitle">关于CBTV</p>
+        <p class="p2" style="text-align:center">以个人为主体进行广告传播，基于社群，这个已经验证过的广告运营模式。加上区块链技术。创新出：区块链基于社群流量价值的新模式。</p>
+        <ul class="desc-ul">
+            <li>
+                <i class="d-icon qqh"></i>
+                <p class="p3">全球化</p>
+                <p class="p4">以TrueChain（初链）为基础开发，<br>打造全球数字广告行业价值互联网的去中心化的应用链。</p>
+            </li>
+            <li>
+                <i class="d-icon dbz"></i>
+                <p class="p3">区块链应用</p>
+                <p class="p4">利用智能合约和密钥加密隐私数据，<br>结合人工智能算法，让全球数亿参与主体共建可信、低成本、<br>高效的区块链去中心化数字广告交易市场。</p>
+            </li>
+            <li>
+                <i class="d-icon cjz"></i>
+                <p class="p3">价值创造</p>
+                <p class="p4">降低广告虚假流量和欺诈损失，降低广<br>告主的流量获取成本，提高数字广告行业的结算效率，让数字<br>广告参与各方的利益最大化。</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="principle"   style="position: absolute; top: -999px;left: -998px;">
+    <div id="principle" class="stm">&nbsp;</div>
+    <div class="w1200 textcen">
+        <p class="ptitle">实现原理</p>
+        <p class="p2">共享CDN把闲置的带宽资源、计算资源、存储资源全部连接在一起，然后提供给需要的人，这是一个颠覆性的创新，<br>降低企业带宽成本和用户上网娱乐成本，堪称CDN领域的Uber。</p>
+        <div class="vcle-box">
+            <i class="vcle"></i>
+            <i class="vclec"></i>
+            <i class="vclel"></i>
+            <i class="vcler"></i>
+        </div>
+    </div>
+</div>
+
+  <div class="worth">
+    <div id="worth" class="stm">&nbsp;</div>
+        <p class="ptitle">CBTV技术方案</p>
+        <div class="w1200 textcen worth-box">
+            <div class="w1200 mgt30">
+            <div class="news-video">
+                <img src="css/images/map.png" style='width:550px;float:left' >
+            </div>
+            <div class="news-content" style='width:620px;float:right;font-size:14px;line-height:28px;letter-spacing:0.5px; text-align:left'>
+                项目按框架划分为三层：底层，平台层，应用层<br>
+                底层：区块链底层，提供账本功能、智能合约、共识机制<br>
+                平台层：向下通过协议和底层进行沟通。向上对应用层提供应用更友好的业务功能。<br>
+                应用层：项目中的各种业务应用显示
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+.v-icon{ margin:10px auto}
+.v-icon img{ border-radius:50%}
+</style>
+ <!--<p class="ptitle">CBTV基于数字广告行业现状提供解决方案</p>-->
+ <!--<div  align="center"><img src="css/images/case.png" style='width:1200px;float:center' > </div>-->
+ <div class="vantage">
+    <div id="team" class="stm"></div>
+    <div class="w1200 textcen">
+        <p class="ptitle">核心优势</p>
+        <ul class="vantage-ul" style="display: flex">
+            <li style="width: 400px">
+                <i class="v-icon" style="border: 1px solid white;border-radius: 50%;width: 80px;height: 80px;background: white"><img src="css/img/computer.png" style="width: 100%"></i>
+                <p class="p1">技术积累</p>
+                <p class="p2">长达10年以上的广告经验，有国内移动互联网顶尖技术研发。</p>
+            </li>
+            <li style="width: 400px">
+                <i class="v-icon" style="border: 1px solid white;border-radius: 50%;width: 80px;height: 80px;background: white"><img src="css/img/resource.png" style="width: 100%"></i>
+                <p class="p1">资源优势</p>
+                <p class="p2">服务超过一亿用户，DAU峰值>400W。</p>
+            </li>
+        </ul>
+        <p class="ptitle">核心团队</p>
+        <ul class="vantage-ul">
+			   <li>
+                 <i class="v-icon" style="width: 80px;height: 80px"><img src="css/images/JohnsonSU.png" style="width: 100%"></i>
+                <p class="p1">Johnson SU</p>
+                <p class="p2">CBTV创始人，连续创业者，从事互联网15年，塞班时代最大的开发者社区OPDA创始人，先后开发来电通（call master），安卓优化大师（DU speed booster）和卓大师（Root master）等3款全球用户过亿产品。主要产品后被百度千万美金收购，2016年转做天使投资，其中投资的出海广告平台NGEmobi8被上市并购。</p>
+            </li>
+			 <li>
+                <i class="v-icon"style="width: 80px;height: 80px"><img src="css/images/Choy.png" style="width: 100%"></i>
+                <p class="p1">Henry Huang</p>
+                <p class="p2">BCTV技术合伙人，资深技术专家，身为技术负责人，服务于在卓大师，新银河，仙果科技等多家优秀的高科技公司。一直在代码一线工作，涉猎多个技术领域。是基于社群广告，营销系统等多个移动广告项目框架设计师。有着丰富的技术经验。对移动互联网广告有着深刻的认识。</p>
+            </li>
+            <li>
+                <i class="v-icon"style="width: 80px;height: 80px"> <img src="css/images/wenpei.png" style="width: 100%"></i>
+                <p class="p1">张芷菲</p>
+                <p class="p2">BCTV联合创始人，毕业于中国传媒大学媒体及品牌传播转业，研究生学历。曾服务于世界500强企业宝洁集团任中华区品牌及新媒体营销高级经理，长期扎根中国品牌营销一线市场，对品牌推广和市场拓展有着丰富的理论和实操经验。先负责BCTV全球社群及市场开拓工作。</p>
+            </li>
+		  </ul>
+		    <SCRIPT>
+                function isHidden(oDiv){
+                  var vDiv = document.getElementById(oDiv);
+                  vDiv.style.display = (vDiv.style.display == 'none')?'block':'none';
+                }
+            </SCRIPT>
+    </div>
+</div>
+        <style>
+            .timer{
+                width:50%;font-size:14px;line-height:28px;letter-spacing:2px;text-align:left;border-right: 3px dashed white;
+                position: relative;
+                height: 500px;
+            }
+            .timer>div{
+                position: absolute;
+            }
+            .timer>div div{
+                box-sizing: border-box;
+                margin-top: 10px;
+                padding: 0 58px;
+                width: 400px;
+                position: absolute;
+            }
+            .timer p{
+                line-height:45px;
+                color: white;
+                display: inline-block;
+            }
+            .timer p span{
+                padding: 0 10px;
+            }
+            .timer p b{
+                background: white;
+                display: inline-block;
+                height: 100%;
+                width: 60px;
+                text-align: center;
+                position: relative;
+            }
+            .timer p b:before{
+                position: absolute;
+                content: '';
+                top:100%;
+                left: 50%;
+                transform: translate(-50%,0);
+                border: 10px solid transparent;
+                border-top-color: white;
+            }
+        </style>
+        <div class="worth">
+            <div id="plan" class="stm">&nbsp;</div>
+            <p class="ptitle">CBTV开发计划</p>
+            <div class="w1200 textcen worth-box" style="background: url(css/img/wbg.jpg) no-repeat -608px 149px;height: 500px">
+                <div class="w1200 mgt30">
+                    <div class="news-content timer">
+                        <div style="text-align: right;right: -31px;top: 10px">
+                            <p style="background: #728E3C">
+                                <span>Alpha版本集成开发</span>
+                                <b style="color: #728E3C">18Q1</b>
+                            </p>
+                            <div style="text-align: left;right: 0">
+                                最小化可验证模型开发，系统内测，完成整个系统流程
+                            </div>
+                        </div>
+
+                        <div style="text-align: right;right: -191px;top: 135px">
+                            <p style="background: #687176">
+                                <b style="color: #687176">18Q2</b>
+                                <span>Beta版本测试上线</span>
+                            </p>
+                            <div style="text-align: left">
+                                邀请内部广告主和内部用户试用，通过传统广告推送方式初始化用户网络
+                            </div>
+                        </div>
+
+                        <div style="text-align: right;right: -31px;top: 261px">
+                            <p style="background: #114A8D">
+                                <span>Release版本正式上线</span>
+                                <b style="color: #114A8D">18Q3</b>
+                            </p>
+                            <div style="text-align: left;right: 0">
+                                更多满足广告主独特投放需求的智能合约模板上架
+                            </div>
+                        </div>
+
+                        <div style="text-align: right;right: -123px;top: 381px">
+                            <p style="background: #E09700">
+                                <b style="color: #E09700">18Q4</b>
+                                <span>SDK接入</span>
+                            </p>
+                            <div style="text-align: left">
+                                为流量主提供多SDK接入
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="news-video" style="float: right;">-->
+                        <!--<img src="css/images/plan.png" style='width:550px;'>-->
+                        <!--<p style="line-height: 35px">项目时间表</p>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+
+ <div class="news" style="position: absolute; top: -999px;left: -999px;">
+    <div class="w1200 mgt30">
+       <div class="news-video">
+            <div id="vplay"></div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+        <div class="copyright2">
+            <p style="text-align: center">
+                <span>© 2018 </span>
+                <a href="/" target="_blank">www.cbtvchain.org官网  版权所有
+                </a>&nbsp;&nbsp;
+                <a href="#" target="_blank"> </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+        </div>
+    </div>
+</div>
+    <div class="navright">
+    <div class="fmenu">
+        <!--<div class="ficon wx">-->
+            <!--<i class="qrcode"></i>-->
+        <!--</div>-->
+        <!--<a href="#" target="_blank">-->
+            <!--<div class="ficon group">-->
+                <!--<i class="qrcode"></i>-->
+            <!--</div>-->
+        <!--</a>-->
+        <a href="javascript:window.scrollTo(0,0);">
+            <div class="ficon top"></div>
+        </a>
+    </div>
+</div>    </div>
+    <script src="css/js/require.min.js"></script>
+    <script type="text/javascript" src="css/js/index.js"></script>
+   </body>
+
+</html>
+
